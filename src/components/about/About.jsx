@@ -1,4 +1,5 @@
 import React from 'react'
+import ProfileImage from '../../assets/Profile-image.svg'; 
 import './About.css'
 
 function About() {
@@ -6,12 +7,11 @@ function About() {
     <div id="about" className="about">
         <div className="about-title">
             <h2><span>About</span> Me</h2>
-            {/* add your image of brand- it will be shown behinf the "About me" text */}
             <img src="" alt="" />
         </div>
         <div className="about-section">
             <div className="about-left">
-                <img src="src\assets\Profile-image.svg" alt="" width="300" height="300"/>
+                <img src={ProfileImage} alt="" width="300" height="300"/>
             </div>
             <div className="about-right">
                 <div className="about-para">
