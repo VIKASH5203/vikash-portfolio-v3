@@ -1,6 +1,7 @@
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-
+import ProfileImage from '../../assets/Profile-image.svg';
+import Resume from '../../assets/Vikash_Kumar_Resume.pdf'; 
 import './Profile.css'
 
 const Profile = () => {
@@ -8,14 +9,14 @@ const Profile = () => {
   const handleDownload = () => {
     alert("Note: This resume may not be up to date. Please contact me for the latest version.");
     const link = document.createElement("a");
-    link.href = "src/assets/Vikash_Kumar_Resume.pdf"; 
+    link.href = Resume;
     link.download = "Vikash_Kumar_Resume.pdf";
     link.click();
   };
 
   return (
     <div id="profile" className="profile">
-      <img src="src\assets\Profile-image.svg" alt="Test SVG" width="400" height="400" />
+      <img src={ProfileImage} alt="Test SVG" width="400" height="400" />
       <h2><span>I'm Vikash Kumar,</span></h2>
       <div class="content">
         <h1 class="title">the Full-Stack Developer

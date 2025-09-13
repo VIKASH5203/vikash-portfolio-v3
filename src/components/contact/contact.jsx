@@ -22,7 +22,7 @@ const Contact = ({ info }) => {
       const data = await response.json();
 
       if (data.success) {
-        setMessage("Form submitted successfully!");
+        setMessage("Message sent Successfully!");
         event.target.reset();
       } else {
         console.error("Error:", data);
